@@ -1,0 +1,46 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.formContainer input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formContainer button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.formContainer button:hover {
+    background-color: #005bb5;
+}
+
+@media (max-width: 480px) {
+    .formContainer {
+        max-width: 90%;
+        padding: 12px;
+    }
+
+    .formContainer input,
+    .formContainer button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

@@ -1,0 +1,78 @@
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.catCard {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.catInfo {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.buttonGroup button {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.buttonGroup button.edit {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.buttonGroup button.edit:hover {
+    background-color: #e0a800;
+}
+
+.buttonGroup button.save {
+    background-color: #28a745;
+    color: white;
+}
+
+.buttonGroup button.save:hover {
+    background-color: #218838;
+}
+
+.buttonGroup button.delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.buttonGroup button.delete:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 480px) {
+    .catCard {
+        padding: 10px;
+    }
+
+    .catInfo {
+        font-size: 14px;
+    }
+
+    .buttonGroup button {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
